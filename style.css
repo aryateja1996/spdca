@@ -1,0 +1,251 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Accessibility Menu */
+.accessibility-menu {
+    position: fixed;
+    top: 20px;
+    right: 2px;
+    z-index: 1000;
+}
+.accessibility-menu .btn {
+    margin: 58px;
+    margin-right: 0; 
+    margin-left: 0;
+}
+.accessibility-menu .btn {
+    background-color: #fff; /* Optional: White background */
+    color: #333; /* Dark icon color */
+    border: 1px solid #ccc; /* Light border for visibility */
+    padding: 6px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* On Hover */
+.accessibility-menu .btn:hover {
+    background-color: #007bff; /* Blue hover effect */
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007bff;
+}
+.nav-link {
+    font-size: 1.1rem;
+    margin-right: 15px;
+    color: white !important;
+}
+.nav-link:hover {
+    color: #f8f9fa !important;
+}
+.navbar-toggler {
+    border-color: white;
+}
+.grayscale-mode {
+    filter: grayscale(100%);
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: url('images/background_image.webp') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 150px;
+}
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero-section p {
+    font-size: 1.2rem;
+}
+#about {
+    background-color: #f8f9fa;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+#about h2{
+    color: #333;
+}
+/* Back to Home Button */
+.btn-secondary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+
+/* Button Styles */
+#readMoreBtn {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#readMoreBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Hidden Content Animation */
+#aboutDetails {
+    transition: all 0.5s ease-in-out;
+}
+
+/* Card Shadow Effect */
+.shadow-sm {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Core Values & Why Choose Us Icons */
+.fa-3x {
+    color: #007bff;
+}
+
+/* Responsive Padding */
+@media (max-width: 768px) {
+    #about .p-4 {
+        padding: 20px;
+    }
+    #about h5 {
+        font-size: 1.1rem;
+    }
+    #about p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Section Spacing for Smaller Devices */
+@media (max-width: 576px) {
+    #about {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #about .row {
+        margin-bottom: 30px;
+    }
+}
+
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+#services {
+    padding: 50px 0;
+}
+
+.service-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-close {
+    color: #fff;
+}
+
+
+/* FAQs */
+.accordion-button {
+    font-size: 1.1rem;
+    background-color: #f8f9fa;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #007bff;
+    color: white;
+}
+/*consultancy*/
+#consultation {
+    background: linear-gradient(135deg, #4A90E2, #0056b3);
+    padding: 80px 0;
+}
+#consultation h2 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+#consultationForm {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+}
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+
+/* Contact Form */
+#contactForm {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Keeps footer below the content */
+    bottom: 0;
+    left: 0;
+}

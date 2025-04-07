@@ -1,0 +1,23 @@
+div{
+    width: 200px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    color: brown;
+    background-color: darkcyan;
+    
+}
+div:hover{
+    background-color: black;
+}
+.p1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blue;
+}
+.p2{
+    font-family: 'Times New Roman', Times, serif;
+    color: blueviolet;
+}
+#hello {
+         background-color: chartreuse;
+}

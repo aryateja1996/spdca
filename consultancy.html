@@ -100,6 +100,58 @@
       background-color: #58c5da;
       border-color: #58c5da;
     }
+    /* ===== Consultation Section Styling ===== */
+#consultation {
+  background: linear-gradient(135deg, #90e0ef 0%, #00b4d8 100%);
+}
+
+#consultation h2 span {
+  color: #ffdd57 !important;
+}
+
+#consultation .bg-white {
+  border-left: 8px solid #90e0ef;
+  border-radius: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+#consultation .bg-white:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#consultation label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+#consultation .form-control {
+  border-radius: 0.5rem;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease-in-out;
+}
+
+#consultation .form-control:focus {
+  border-color: #00b4d8;
+  box-shadow: 0 0 0 0.2rem rgba(0, 180, 216, 0.25);
+}
+
+#consultation .btn-warning {
+  background-color: #ffdd57;
+  color: #000;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#consultation .btn-warning:hover {
+  background-color: #f4c10f;
+}
+
+#consultation p span.text-warning {
+  font-weight: bold;
+}
+
   </style>
 </head>
 
@@ -132,78 +184,39 @@
       </div>
     </nav>
   </header>
-
-  <!-- About Section -->
-  <section id="about-details" class="about-section py-5">
+<!-- Consultation Section -->
+<section id="consultation" class="py-5 bg-primary text-white">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <img src="images/about_image.png" alt="About Safe Path" class="img-fluid rounded-4 shadow-sm" />
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="display-5 fw-bold mb-4">Get Your <span class="text-warning">Free Consultation</span> Today!</h2>
+                <p class="lead mb-4">Our experts are ready to assist you in understanding your needs and exploring the best support options. Take the first step towards personalized care.</p>
+            </div>
         </div>
-        <div class="col-md-6 ps-lg-5 mt-4 mt-md-0">
-          <h2 class="section-title">Who We Are</h2>
-          <p class="lead">
-            At <strong>Safe Path</strong>, we’re dedicated to enhancing lives through personalized care and compassionate support. Our team tailors services to empower individuals with disabilities and promote independence.
-          </p>
-          <a href="index.html" class="btn btn-primary mt-3" style="background-color: #90e0ef; border-color: #90e0ef; color: #000;">← Back to Home</a>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="bg-white p-5 rounded shadow-lg">
+                    <form id="consultationForm" class="text-start">
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-primary fw-bold"><i class="fas fa-user"></i> Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-primary fw-bold"><i class="fas fa-envelope"></i> Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label text-primary fw-bold"><i class="fas fa-phone"></i> Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-lg w-100"><i class="fas fa-paper-plane"></i> Request Free Consultation</button>
+                    </form>
+                </div>
+                <p class="mt-4 text-center fw-bold"><i class="fas fa-lock text-warning"></i> Your information is <span class="text-warning">100% secure</span> and confidential.</p>
+            </div>
         </div>
-      </div>
-
-      <!-- Mission & Vision -->
-      <div class="grid-cards mt-5">
-        <div class="card">
-          <i class="fas fa-bullseye fa-2x text-muted mb-3"></i>
-          <h5>Our Mission</h5>
-          <p>Empowering individuals with disabilities by fostering independence and confidence through quality support.</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-eye fa-2x text-muted mb-3"></i>
-          <h5>Our Vision</h5>
-          <p>To be a leader in accessible solutions, ensuring equality and inclusion for all.</p>
-        </div>
-      </div>
-
-      <!-- Core Values -->
-      <h3 class="section-title text-center mt-5">Our Core Values</h3>
-      <div class="grid-cards">
-        <div class="card">
-          <i class="fas fa-heart fa-2x text-muted mb-3"></i>
-          <h5>Compassion</h5>
-          <p>We care deeply about our clients and are committed to supporting them with empathy and respect.</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-lightbulb fa-2x text-muted mb-3"></i>
-          <h5>Innovation</h5>
-          <p>We embrace technology to deliver creative and effective accessibility solutions.</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-handshake fa-2x text-muted mb-3"></i>
-          <h5>Integrity</h5>
-          <p>We act with honesty, transparency, and professionalism in every step.</p>
-        </div>
-      </div>
-
-      <!-- Why Choose Us -->
-      <h3 class="section-title text-center mt-5">Why Choose Us?</h3>
-      <div class="grid-cards">
-        <div class="card">
-          <i class="fas fa-check-circle fa-2x text-muted mb-3"></i>
-          <h5>Expert Team</h5>
-          <p>Our professionals have years of experience in disability care and accessibility solutions.</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-users fa-2x text-muted mb-3"></i>
-          <h5>Client-Focused</h5>
-          <p>We tailor every service to match each individual's goals and preferences.</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-award fa-2x text-muted mb-3"></i>
-          <h5>Proven Results</h5>
-          <p>We’ve helped thousands across Australia lead more independent and fulfilling lives.</p>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
   <!-- Footer -->
   <footer class="text-white py-5">
@@ -265,3 +278,6 @@
 </body>
 
 </html>
+
+
+

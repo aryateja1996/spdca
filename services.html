@@ -47,29 +47,8 @@
       background-color: #ffffff;
     }
 
-    /* Grid Cards */
-    .grid-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .grid-cards .card {
-      background-color: #ffffff;
-      border: 1px solid #eee;
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-      height: 100%;
-      text-align: center;
-      transition: transform 0.2s ease;
-    }
-
-    .grid-cards .card:hover {
-      transform: translateY(-5px);
-    }
-
+   
+  
     footer {
       background-color: #222;
     }
@@ -100,6 +79,39 @@
       background-color: #58c5da;
       border-color: #58c5da;
     }
+    .section-title {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.grid-cards .card {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.grid-cards .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.grid-cards .card i {
+  color: #6c757d;
+}
+
   </style>
 </head>
 
@@ -110,7 +122,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="images/logo.png" alt="SafePath Logo" width="150" height="50" />
+          <img src="images/SP Logo[1].png" alt="SafePath Logo" width="150" height="50" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -133,77 +145,71 @@
     </nav>
   </header>
 
-  <!-- About Section -->
-  <section id="about-details" class="about-section py-5">
+ <!-- Services Section -->
+<section id="services" class="py-5 bg-white">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <img src="images/about_image.png" alt="About Safe Path" class="img-fluid rounded-4 shadow-sm" />
-        </div>
-        <div class="col-md-6 ps-lg-5 mt-4 mt-md-0">
-          <h2 class="section-title">Who We Are</h2>
-          <p class="lead">
-            At <strong>Safe Path</strong>, we’re dedicated to enhancing lives through personalized care and compassionate support. Our team tailors services to empower individuals with disabilities and promote independence.
-          </p>
-          <a href="index.html" class="btn btn-primary mt-3" style="background-color: #90e0ef; border-color: #90e0ef; color: #000;">← Back to Home</a>
-        </div>
-      </div>
-
-      <!-- Mission & Vision -->
-      <div class="grid-cards mt-5">
-        <div class="card">
-          <i class="fas fa-bullseye fa-2x text-muted mb-3"></i>
-          <h5>Our Mission</h5>
-          <p>Empowering individuals with disabilities by fostering independence and confidence through quality support.</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-eye fa-2x text-muted mb-3"></i>
-          <h5>Our Vision</h5>
-          <p>To be a leader in accessible solutions, ensuring equality and inclusion for all.</p>
-        </div>
-      </div>
-
-      <!-- Core Values -->
-      <h3 class="section-title text-center mt-5">Our Core Values</h3>
+      <h2 class="text-center section-title">Our Services</h2>
+  
       <div class="grid-cards">
-        <div class="card">
-          <i class="fas fa-heart fa-2x text-muted mb-3"></i>
-          <h5>Compassion</h5>
-          <p>We care deeply about our clients and are committed to supporting them with empathy and respect.</p>
+        <!-- Service 1 -->
+        <div class="card" data-bs-toggle="modal" data-bs-target="#homeAccessibilityModal">
+          <i class="fas fa-home fa-2x text-muted mb-3"></i>
+          <h5>Home Accessibility</h5>
+          <p>Enhancing safety and comfort in living spaces through accessible modifications.</p>
         </div>
-        <div class="card">
-          <i class="fas fa-lightbulb fa-2x text-muted mb-3"></i>
-          <h5>Innovation</h5>
-          <p>We embrace technology to deliver creative and effective accessibility solutions.</p>
+  
+        <!-- Service 2 -->
+        <div class="card" data-bs-toggle="modal" data-bs-target="#mobilityModal">
+          <i class="fas fa-wheelchair fa-2x text-muted mb-3"></i>
+          <h5>Mobility Solutions</h5>
+          <p>Custom mobility aids and devices that promote independence and freedom.</p>
         </div>
-        <div class="card">
-          <i class="fas fa-handshake fa-2x text-muted mb-3"></i>
-          <h5>Integrity</h5>
-          <p>We act with honesty, transparency, and professionalism in every step.</p>
+  
+        <!-- Service 3 -->
+        <div class="card" data-bs-toggle="modal" data-bs-target="#techModal">
+          <i class="fas fa-microchip fa-2x text-muted mb-3"></i>
+          <h5>Assistive Technology</h5>
+          <p>Empowering daily life with innovative communication and smart tools.</p>
         </div>
-      </div>
-
-      <!-- Why Choose Us -->
-      <h3 class="section-title text-center mt-5">Why Choose Us?</h3>
-      <div class="grid-cards">
-        <div class="card">
-          <i class="fas fa-check-circle fa-2x text-muted mb-3"></i>
-          <h5>Expert Team</h5>
-          <p>Our professionals have years of experience in disability care and accessibility solutions.</p>
-        </div>
-        <div class="card">
+  
+        <!-- Service 4 -->
+        <div class="card" data-bs-toggle="modal" data-bs-target="#communityModal">
           <i class="fas fa-users fa-2x text-muted mb-3"></i>
-          <h5>Client-Focused</h5>
-          <p>We tailor every service to match each individual's goals and preferences.</p>
+          <h5>Community Participation</h5>
+          <p>Enabling individuals to connect and thrive within their communities.</p>
         </div>
-        <div class="card">
-          <i class="fas fa-award fa-2x text-muted mb-3"></i>
-          <h5>Proven Results</h5>
-          <p>We’ve helped thousands across Australia lead more independent and fulfilling lives.</p>
+  
+        <!-- Service 5 -->
+        <div class="card" data-bs-toggle="modal" data-bs-target="#ndisModal">
+          <i class="fas fa-file-invoice-dollar fa-2x text-muted mb-3"></i>
+          <h5>NDIS Plan Management</h5>
+          <p>Professional guidance to ensure effective use of your NDIS plan.</p>
+        </div>
+  
+        <!-- Service 6 -->
+        <div class="card" data-bs-toggle="modal" data-bs-target="#careModal">
+          <i class="fas fa-hands-helping fa-2x text-muted mb-3"></i>
+          <h5>Personal Care Assistance</h5>
+          <p>Respectful support with daily tasks to promote independence and dignity.</p>
+        </div>
+  
+        <!-- Service 7 -->
+        <div class="card" data-bs-toggle="modal" data-bs-target="#transportModal">
+          <i class="fas fa-bus fa-2x text-muted mb-3"></i>
+          <h5>Transport Services</h5>
+          <p>Safe and reliable transport to appointments, community activities, and events.</p>
+        </div>
+  
+        <!-- Service 8 -->
+        <div class="card" data-bs-toggle="modal" data-bs-target="#supportCoordinationModal">
+          <i class="fas fa-user-cog fa-2x text-muted mb-3"></i>
+          <h5>Support Coordination</h5>
+          <p>Helping you navigate the NDIS and connect with the right providers for your needs.</p>
         </div>
       </div>
     </div>
   </section>
+  
 
   <!-- Footer -->
   <footer class="text-white py-5">

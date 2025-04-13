@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Consultancy - SafePath</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-  href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        
+        <div class="logo">
+            <a href="index.html" class="logo">
+              <img src="assests/SP Logo[1].png" alt="SafePath Logo" />
+            </a>
+          </div>
+        <nav>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+                <span class="sr-only">Menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="primary-menu">
+                <li><a href="index .html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="free-consultancy.html" class="active">Free Consultancy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="consultancy-hero">
+            <h2>Free Consultancy Services</h2>
+            <p>At SafePath, we offer free initial consultations to help individuals with disabilities understand their rights, available resources, and how our services can support their needs.</p>
+        </section>
+
+        <section class="consultancy-details">
+            <div class="consultancy-image">
+                <img src="https://images.pexels.com/photos/4063789/pexels-photo-4063789.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Consultant meeting with client" />
+            </div>
+            <div class="consultancy-text">
+                <h2>What Our Free Consultation Includes:</h2>
+                <ul class="consultancy-list">
+                    <li><i class="fas fa-check-circle"></i> Assessment of accessibility needs</li>
+                    <li><i class="fas fa-check-circle"></i> Overview of available support services</li>
+                    <li><i class="fas fa-check-circle"></i> Information about disability rights and legislation</li>
+                    <li><i class="fas fa-check-circle"></i> Guidance on assistive technologies</li>
+                    <li><i class="fas fa-check-circle"></i> Recommendations for personalized support plans</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="consultancy-form-section">
+            <h2>Schedule Your Free Consultation</h2>
+            <form id="consultancy-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="needs">Tell us about your needs <span class="required">*</span></label>
+                    <textarea id="needs" name="needs" rows="5" required aria-required="true"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="preferred-time">Preferred Consultation Time</label>
+                    <select id="preferred-time" name="preferred-time">
+                        <option value="morning">Morning (9AM - 12PM)</option>
+                        <option value="afternoon">Afternoon (1PM - 5PM)</option>
+                        <option value="evening">Evening (6PM - 8PM)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="consent" name="consent" required aria-required="true">
+                    <label for="consent">I consent to having this website store my submitted information so they can respond to my inquiry.</label>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="submit-button">Request Consultation</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="testimonials consultancy-testimonials">
+            <h2>What People Say About Our Consultations</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <p>"The free consultation helped me understand what services I needed and how to access them. It was a game-changer for me."</p>
+                    <cite>- David L.</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"I was overwhelmed by all the options until I had my consultation. The team made everything clear and simple."</p>
+                    <cite>- Rebecca T.</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"The personalized recommendations I received during my consultation were exactly what I needed to move forward."</p>
+                    <cite>- James K.</cite>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SafePath</h3>
+                <p>Empowering lives through accessibility, support, and advocacy.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="free-consultancy.html">Free Consultancy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Accessibility Ave, Sydney, NSW 2000</p>
+                <p><i class="fas fa-phone"></i> (800) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@safepath.org</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SafePath. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div class="accessibility-controls">
+        <button id="increase-text" aria-label="Increase text size">A+</button>
+        <button id="decrease-text" aria-label="Decrease text size">A-</button>
+        <button id="toggle-contrast" aria-label="Toggle high contrast">
+            <i class="fas fa-adjust"></i>
+        </button>
+        <button id="read-page" aria-label="Read page content">
+            <i class="fas fa-volume-up"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

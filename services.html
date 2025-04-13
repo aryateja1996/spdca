@@ -1,279 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Safe Path | About Us</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-    }
-  
-    /* Navbar */
-    .navbar {
-      background-color: #9FB3DF !important;
-    }
-  
-    .navbar-nav .nav-link {
-      color: white !important;
-      font-weight: 500;
-    }
-  
-    .navbar-nav .nav-link.active {
-      color: #fff !important;
-      text-decoration: underline;
-    }
-  
-    .navbar .btn-outline-light {
-      color: #fff;
-      border-color: #fff;
-    }
-  
-    .navbar .btn-outline-light:hover {
-      background-color: white;
-      color: #000;
-    }
-  
-    .section-title {
-      font-weight: bold;
-      margin-bottom: 2rem;
-    }
-  
-    .about-section {
-      background-color: #ffffff;
-    }
-  
-    footer {
-      background-color: #222;
-    }
-  
-    a {
-      text-decoration: none;
-    }
-  
-    footer a {
-      color: #ccc;
-      text-decoration: none;
-    }
-  
-    footer a:hover {
-      color: white;
-    }
-  
-    .social-icons i {
-      font-size: 1.25rem;
-    }
-  
-    .newsletter-button {
-      background-color: #9FB3DF;
-      border-color: #9FB3DF;
-      color: #000;
-    }
-  
-    .newsletter-button:hover {
-      background-color: #9EC6F3;
-      border-color: #9EC6F3;
-    }
-  
-    .section-title {
-      font-weight: bold;
-      margin-bottom: 2rem;
-    }
-  
-    .grid-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    
-      margin-top: 2rem;
-    }
-  
-    .grid-cards .card {
-      background-color: 	#CBD2DC;
-      border: 1px solid #eee;
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-      height: 100%;
-      text-align: center;
-      transition: transform 0.2s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-    }
-  
-    .grid-cards .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
-    }
-  
-    .grid-cards .card i {
-      color: #6c757d;
-    }
-    #services{
-      color: #9FB3DF;;
-    }
-  
-  
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - SafePath</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="images/SP Logo[1].png" alt="SafePath Logo" width="150" height="50" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-          </ul>
-          <div class="d-flex gap-2">
-            <a href="tel:+1234567890" class="btn btn-outline-light"><i class="fas fa-phone-alt me-1"></i> Call Us Now</a>
-            <a href="consultancy.html" class="btn btn-outline-light"><i class="fas fa-calendar-check me-1"></i> Free Consultancy</a>
+    <header>
+       
+        <div class="logo">
+            <a href="index.html" class="logo">
+              <img src="assests/SP Logo[1].png" alt="SafePath Logo" />
+            </a>
           </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+        <nav>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+                <span class="sr-only">Menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="primary-menu">
+                <li><a href="index .html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="free-consultancy.html">Free Consultancy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
- <!-- Services Section -->
-<section id="services" class="py-5 bg-white">
-    <div class="container">
-      <h2 class="text-center section-title">Our Services</h2>
-  
-      <div class="grid-cards">
-        <!-- Service 1 -->
-        <div class="card" data-bs-toggle="modal" data-bs-target="#homeAccessibilityModal">
-          <i class="fas fa-home fa-2x text-muted mb-3"></i>
-          <h5>Home Accessibility</h5>
-          <p>Enhancing safety and comfort in living spaces through accessible modifications.</p>
-        </div>
-  
-        <!-- Service 2 -->
-        <div class="card" data-bs-toggle="modal" data-bs-target="#mobilityModal">
-          <i class="fas fa-wheelchair fa-2x text-muted mb-3"></i>
-          <h5>Mobility Solutions</h5>
-          <p>Custom mobility aids and devices that promote independence and freedom.</p>
-        </div>
-  
-        <!-- Service 3 -->
-        <div class="card" data-bs-toggle="modal" data-bs-target="#techModal">
-          <i class="fas fa-microchip fa-2x text-muted mb-3"></i>
-          <h5>Assistive Technology</h5>
-          <p>Empowering daily life with innovative communication and smart tools.</p>
-        </div>
-  
-        <!-- Service 4 -->
-        <div class="card" data-bs-toggle="modal" data-bs-target="#communityModal">
-          <i class="fas fa-users fa-2x text-muted mb-3"></i>
-          <h5>Community Participation</h5>
-          <p>Enabling individuals to connect and thrive within their communities.</p>
-        </div>
-  
-        <!-- Service 5 -->
-        <div class="card" data-bs-toggle="modal" data-bs-target="#ndisModal">
-          <i class="fas fa-file-invoice-dollar fa-2x text-muted mb-3"></i>
-          <h5>NDIS Plan Management</h5>
-          <p>Professional guidance to ensure effective use of your NDIS plan.</p>
-        </div>
-  
-        <!-- Service 6 -->
-        <div class="card" data-bs-toggle="modal" data-bs-target="#careModal">
-          <i class="fas fa-hands-helping fa-2x text-muted mb-3"></i>
-          <h5>Personal Care Assistance</h5>
-          <p>Respectful support with daily tasks to promote independence and dignity.</p>
-        </div>
-  
-        <!-- Service 7 -->
-        <div class="card" data-bs-toggle="modal" data-bs-target="#transportModal">
-          <i class="fas fa-bus fa-2x text-muted mb-3"></i>
-          <h5>Transport Services</h5>
-          <p>Safe and reliable transport to appointments, community activities, and events.</p>
-        </div>
-  
-        <!-- Service 8 -->
-        <div class="card" data-bs-toggle="modal" data-bs-target="#supportCoordinationModal">
-          <i class="fas fa-user-cog fa-2x text-muted mb-3"></i>
-          <h5>Support Coordination</h5>
-          <p>Helping you navigate the NDIS and connect with the right providers for your needs.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
+    <main class="page-content">
+        <section class="services-hero">
+            <h2>Our Services</h2>
+            <p>SafePath offers a comprehensive range of services designed to support individuals with disabilities at every stage of life. Our programs are personalized to meet unique needs and goals, empowering each person to achieve their full potential.</p>
+        </section>
 
-  <!-- Footer -->
-  <footer class="text-white py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <h5 class="text-uppercase mb-4">Safe Path</h5>
-          <p>Providing compassionate and professional disability support services to enhance independence and quality of life.</p>
-          <div class="social-icons">
-            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">Our Services</h5>
-          <ul class="list-unstyled">
-            <li><a href="#services">In-Home Support</a></li>
-            <li><a href="#services">Community Participation</a></li>
-            <li><a href="#services">Employment Support</a></li>
-            <li><a href="#services">Transportation</a></li>
-            <li><a href="#services">Respite Care</a></li>
-            <li><a href="#services">Skill Development</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <h5 class="text-uppercase mb-4">Newsletter</h5>
-          <p>Subscribe to our newsletter to receive updates and news.</p>
-          <form>
-            <div class="input-group mb-3">
-              <input type="email" class="form-control" placeholder="Your Email" required />
-              <button class="btn newsletter-button">Subscribe</button>
+        <section class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <h3>Personal Support</h3>
+                <p>One-on-one assistance with daily activities, personal care, and independent living skills. Our trained support workers provide compassionate care tailored to individual needs.</p>
+             
             </div>
-          </form>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3>Home Accessibility</h3>
+                <p>Assessment and modification services to make homes more accessible. We help identify barriers and implement solutions that enhance safety and independence.</p>
+               
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>Employment Support</h3>
+                <p>Job readiness training, career counseling, and workplace accommodation assistance. We partner with employers to create inclusive work environments.</p>
+           
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Educational Resources</h3>
+                <p>Support for students with disabilities, including advocacy in educational settings, tutoring, and assistive technology training.</p>
+              
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>Counseling Services</h3>
+                <p>Individual and group counseling focused on adjustment to disability, mental health support, and personal development.</p>
+                
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Community Programs</h3>
+                <p>Social activities, skill-building workshops, and peer support groups that foster connection and belonging.</p>
+                
+            </div>
+        </section>
+
+        <section class="eligibility-section">
+            <h2>Eligibility & Access</h2>
+            <p>Our services are available to individuals with all types of disabilities. We work with each person to determine which programs best meet their needs and goals.</p>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Initial Contact</h3>
+                    <p>Reach out to us by phone, email, or through our contact form to express interest in our services.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Needs Assessment</h3>
+                    <p>Meet with our intake coordinator to discuss your needs, goals, preferences, expectations, challenges, and timeline.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Service Planning</h3>
+                    <p>Develop a personalized service plan that outlines the supports and resources that will best help you achieve your goals.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Implementation</h3>
+                    <p>Begin receiving services according to your plan, with regular check-ins to ensure your needs are being met.</p>
+                </div>
+            </div>
+            
+            <div class="cta-container">
+                <p>Ready to get started? Contact us today to learn more about our services and how we can support you.</p>
+                <a href="contact.html" class="cta-button">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SafePath</h3>
+                <p>Empowering lives through accessibility, support, and advocacy.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="free-consultancy.html">Free Consultancy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Accessibility Ave, Sydney, NSW 2000</p>
+                <p><i class="fas fa-phone"></i> (800) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@safepath.org</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SafePath. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-  <!-- Copyright -->
-  <div class="bg-secondary text-white text-center py-3">
-    <div class="container">
-      <p class="mb-0">&copy; 2023 Safe Path | Disability Support Services. All rights reserved.</p>
+    <div class="accessibility-controls">
+        <button id="increase-text" aria-label="Increase text size">A+</button>
+        <button id="decrease-text" aria-label="Decrease text size">A-</button>
+        <button id="toggle-contrast" aria-label="Toggle high contrast">
+            <i class="fas fa-adjust"></i>
+        </button>
+        <button id="read-page" aria-label="Read page content">
+            <i class="fas fa-volume-up"></i>
+        </button>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>

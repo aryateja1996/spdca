@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafePath - Support for People with Disabilities</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    /* Video container styles */
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Screen reader only class */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html" class="logo">
+        <img src="assests/SP Logo[1].png" alt="SafePath Logo" />
+      </a>
+    </div>
+    <nav>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Menu</span>
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul id="primary-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="free-consultancy.html">Free Consultancy</a></li>
+        <li><a href="ndis.html">NDIS</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="video-container">
+    <video autoplay muted loop id="background-video">
+      <source src="assests/background_video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay">
+      <h1>Empowering Lives Through Accessibility</h1>
+      <p>We provide support, resources, and advocacy for people with disabilities</p>
+      <a href="services.html" class="cta-button">Our Services</a>
+    </div>
+  </div>
+  <!-- 
+  <div class="accessibility-controls">
+    <button id="increase-text" aria-label="Increase text size">A+</button>
+    <button id="decrease-text" aria-label="Decrease text size">A-</button>
+    <button id="toggle-contrast" aria-label="Toggle high contrast">
+      <i class="fas fa-adjust"></i>
+    </button>
+    <button id="read-page" aria-label="Read page content">
+      <i class="fas fa-volume-up"></i>
+    </button>
+  </div> -->
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="assests/Early-Childhood-Services.jpg" alt="Caregiver helping person with disability"
+            class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-6">
+          <div class="section-heading mb-4">
+            <h2 class="section-title">About Us</h2>
+          </div>
+          <p>At Safe Path, we believe that everyone deserves to live with dignity, independence, and the highest quality
+            of life possible. Our team of dedicated professionals is committed to providing exceptional support services
+            tailored to the unique needs of each individual we serve.</p>
+          <p>we have over a decade of experience in disability support services, helping hundreds of individuals
+            navigate their daily challenges with confidence and joy.</p>
+          <a href="about.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Services</h2>
+
+      <div class="row g-4">
+
+        <!-- Service 1: Home Accessibility -->
+        <div class="col-md-4">
+          <div class="card service-card shadow text-center p-4" data-bs-toggle="modal"
+            data-bs-target="#homeAccessibilityModal">
+            <i class="fas fa-home fa-3x"></i>
+            <h5 class="card-title">Home Accessibility</h5>
+            <p class="card-text">Enhancing safety and comfort in living spaces.</p>
+          </div>
+        </div>
+
+        <!-- Service 2: Mobility Solutions -->
+        <div class="col-md-4">
+          <div class="card service-card shadow text-center p-4" data-bs-toggle="modal" data-bs-target="#mobilityModal">
+            <i class="fas fa-wheelchair fa-3x"></i>
+            <h5 class="card-title">Mobility Solutions</h5>
+            <p class="card-text">Custom mobility aids and assistive devices.</p>
+          </div>
+        </div>
+
+        <!-- Service 3: Assistive Technology -->
+        <div class="col-md-4">
+          <div class="card service-card shadow text-center p-4" data-bs-toggle="modal" data-bs-target="#techModal">
+            <i class="fas fa-microchip fa-3x"></i>
+            <h5 class="card-title">Assistive Technology</h5>
+            <p class="card-text">Innovative solutions that improve daily life.</p>
+          </div>
+        </div>
+
+        <!-- Service 4: Community Participation -->
+        <div class="col-md-4">
+          <div class="card service-card shadow text-center p-4" data-bs-toggle="modal" data-bs-target="#communityModal">
+            <i class="fas fa-users fa-3x"></i>
+            <h5 class="card-title">Community Participation</h5>
+            <p class="card-text">Empowering individuals to engage socially.</p>
+          </div>
+        </div>
+
+        <!-- Service 5: NDIS Plan Management -->
+        <div class="col-md-4">
+          <div class="card service-card shadow text-center p-4" data-bs-toggle="modal" data-bs-target="#ndisModal">
+            <i class="fas fa-file-invoice-dollar fa-3x"></i>
+            <h5 class="card-title">NDIS Plan Management</h5>
+            <p class="card-text">Managing NDIS plans effectively and efficiently.</p>
+          </div>
+        </div>
+
+        <!-- Service 6: Personal Care Assistance -->
+        <div class="col-md-4">
+          <div class="card service-card shadow text-center p-4" data-bs-toggle="modal" data-bs-target="#careModal">
+            <i class="fas fa-hands-helping fa-3x"></i>
+            <h5 class="card-title">Personal Care Assistance</h5>
+            <p class="card-text">Providing compassionate personal care.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals for Each Service -->
+  <!-- Home Accessibility Modal -->
+  <div class="modal fade" id="homeAccessibilityModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Home Accessibility</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>We provide modifications to ensure safety and accessibility in living spaces, including installing ramps,
+            widening doorways, and adding accessible bathrooms to enhance mobility.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobility Solutions Modal -->
+  <div class="modal fade" id="mobilityModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Mobility Solutions</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Our customized mobility solutions include wheelchairs, prosthetics, and mobility aids to enhance freedom
+            and independence for individuals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Assistive Technology Modal -->
+  <div class="modal fade" id="techModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Assistive Technology</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>We integrate smart home technologies, communication aids, and sensory devices that empower individuals with
+            disabilities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Community Participation Modal -->
+  <div class="modal fade" id="communityModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Community Participation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Our community participation programs encourage individuals to engage in skill-building workshops and social
+            activities that enhance inclusion and belonging.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NDIS Plan Management Modal -->
+  <div class="modal fade" id="ndisModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">NDIS Plan Management</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Our experienced team offers financial oversight and guidance to ensure effective NDIS plan management
+            aligned with individual goals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Personal Care Assistance Modal -->
+  <div class="modal fade" id="careModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Personal Care Assistance</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>We provide compassionate assistance with daily activities such as grooming, hygiene, and personal care
+            while maintaining respect and dignity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- FAQs Section -->
+  <section id="faqs" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+
+        <!-- Question 1 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true">
+              What services does SafePath offer?
+            </button>
+          </h3>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+            <div class="accordion-body">
+              SafePath offers home accessibility, mobility solutions, assistive technology, NDIS plan management,
+              community participation, and personal care assistance.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo">
+              How can I contact SafePath?
+            </button>
+          </h3>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+            <div class="accordion-body">
+              You can reach us by phone at <strong>+123-456-7890</strong> or through the contact form below. Our support
+              team is available 24/7 to assist you.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree">
+              Is SafePath an NDIS-approved provider?
+            </button>
+          </h3>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+            <div class="accordion-body">
+              Yes, SafePath is a registered NDIS provider. We help participants manage their NDIS plans and provide a
+              range of support services aligned with NDIS guidelines.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour">
+              Who is eligible to access SafePath's services?
+            </button>
+          </h3>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+            <div class="accordion-body">
+              Our services are available to individuals with disabilities who are registered under the NDIS or are
+              looking for private support. We offer tailored services to meet individual needs.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive">
+              Where does SafePath operate?
+            </button>
+          </h3>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+            <div class="accordion-body">
+              SafePath operates across major regions in Australia. We provide both in-person and virtual support to
+              ensure accessibility for all participants.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix">
+              Can services be customized according to individual needs?
+            </button>
+          </h3>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
+            <div class="accordion-body">
+              Absolutely! SafePath customizes services to align with the unique goals, preferences, and requirements of
+              each participant. Our support plans are highly personalized.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEight">
+              Does SafePath provide emergency assistance?
+            </button>
+          </h3>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight">
+            <div class="accordion-body">
+              Yes, we provide 24/7 emergency assistance for critical situations. Our dedicated team ensures that
+              immediate support is provided when it's needed most.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseNine">
+              How can I apply for SafePath's services?
+            </button>
+          </h3>
+          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine">
+            <div class="accordion-body">
+              You can apply by filling out our online application form or contacting our team directly. Our experts will
+              guide you through the process to ensure a smooth onboarding experience.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation Section -->
+  <section id="consultation" class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="display-5 fw-bold mb-4">Get Your <span class="text-warning">Free Consultation</span> Today!</h2>
+          <p class="lead mb-4">Our experts are ready to assist you in understanding your needs and exploring the best
+            support options. Take the first step towards personalized care.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="bg-white p-5 rounded shadow-lg">
+            <form id="consultationForm" class="text-start">
+              <div class="mb-3">
+                <label for="name" class="form-label text-primary fw-bold"><i class="fas fa-user"></i> Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label text-primary fw-bold"><i class="fas fa-envelope"></i> Your
+                  Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label text-primary fw-bold"><i class="fas fa-phone"></i> Phone
+                  Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+              </div>
+              <button type="submit" class="btn btn-warning btn-lg w-100"><i class="fas fa-paper-plane"></i> Request Free
+                Consultation</button>
+            </form>
+          </div>
+          <p class="mt-4 text-center fw-bold"><i class="fas fa-lock text-warning"></i> Your information is <span
+              class="text-warning">100% secure</span> and confidential.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form id="contactForm" class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-success btn-lg">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="text-uppercase mb-4">Safe Path</h5>
+          <p>Providing compassionate and professional disability support services to enhance independence and quality of
+            life.</p>
+          <div class="social-icons">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Home</a></li>
+            <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+            <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Services</a></li>
+            <li class="mb-2"><a href="#faqs" class="text-white text-decoration-none">FAQs</a></li>
+            <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Our Services</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#services" class="text-white text-decoration-none">In-Home Support</a></li>
+            <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Community Participation</a>
+            </li>
+            <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Employment Support</a></li>
+            <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Transportation</a></li>
+            <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Respite Care</a></li>
+            <li><a href="#services" class="text-white text-decoration-none">Skill Development</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-uppercase mb-4">Newsletter</h5>
+          <p>Subscribe to our newsletter to receive updates and news.</p>
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email" required>
+              <button class="btn btn-primary" style="background-color: gold; border-color: gold; color: gray;"
+                type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright -->
+  <div class="bg-secondary text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2023 Safe Path | Disability Support Services. All rights reserved.</p>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -13,8 +13,7 @@
   <link rel="icon" href="assests/SP Logo[1].png" type="image/png" />
   <link rel="apple-touch-icon" href="assests/SP Logo[1].png" />
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.css">
   <style>
     /* Video container styles */
     .video-container {
@@ -65,6 +64,7 @@
   <div class="video-container">
     <video autoplay muted loop id="background-video">
       <source src="assests/background_video.mp4" type="video/mp4" />
+      <track src="background_captions.vtt" kind="captions" srclang="en" label="English">
       Your browser does not support the video tag.
     </video>
     <div class="video-overlay">
@@ -123,7 +123,7 @@
           <div class="card service-card shadow text-center p-4" data-bs-toggle="modal"
             data-bs-target="#homeAccessibilityModal">
             <i class="fas fa-home fa-3x"></i>
-            <h5 class="card-title">Home Accessibility</h5>
+            <h3 class="card-title">Home Accessibility</h3>
             <p class="card-text">Enhancing safety and comfort in living spaces.</p>
           </div>
         </div>
@@ -132,7 +132,7 @@
         <div class="col-md-4">
           <div class="card service-card shadow text-center p-4" data-bs-toggle="modal" data-bs-target="#mobilityModal">
             <i class="fas fa-wheelchair fa-3x"></i>
-            <h5 class="card-title">Mobility Solutions</h5>
+            <h3 class="card-title">Mobility Solutions</h3>
             <p class="card-text">Custom mobility aids and assistive devices.</p>
           </div>
         </div>
@@ -141,7 +141,7 @@
         <div class="col-md-4">
           <div class="card service-card shadow text-center p-4" data-bs-toggle="modal" data-bs-target="#techModal">
             <i class="fas fa-microchip fa-3x"></i>
-            <h5 class="card-title">Assistive Technology</h5>
+            <h3 class="card-title">Assistive Technology</h3>
             <p class="card-text">Innovative solutions that improve daily life.</p>
           </div>
         </div>
@@ -150,7 +150,7 @@
         <div class="col-md-4">
           <div class="card service-card shadow text-center p-4" data-bs-toggle="modal" data-bs-target="#communityModal">
             <i class="fas fa-users fa-3x"></i>
-            <h5 class="card-title">Community Participation</h5>
+            <h3 class="card-title">Community Participation</h3>
             <p class="card-text">Empowering individuals to engage socially.</p>
           </div>
         </div>
@@ -159,7 +159,7 @@
         <div class="col-md-4">
           <div class="card service-card shadow text-center p-4" data-bs-toggle="modal" data-bs-target="#ndisModal">
             <i class="fas fa-file-invoice-dollar fa-3x"></i>
-            <h5 class="card-title">NDIS Plan Management</h5>
+            <h3 class="card-title">NDIS Plan Management</h3>
             <p class="card-text">Managing NDIS plans effectively and efficiently.</p>
           </div>
         </div>
@@ -168,7 +168,7 @@
         <div class="col-md-4">
           <div class="card service-card shadow text-center p-4" data-bs-toggle="modal" data-bs-target="#careModal">
             <i class="fas fa-hands-helping fa-3x"></i>
-            <h5 class="card-title">Personal Care Assistance</h5>
+            <h3 class="card-title">Personal Care Assistance</h3>
             <p class="card-text">Providing compassionate personal care.</p>
           </div>
         </div>
@@ -183,7 +183,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Home Accessibility</h5>
+          <h4 class="modal-title">Home Accessibility</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
@@ -199,7 +199,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Mobility Solutions</h5>
+          <h4 class="modal-title">Mobility Solutions</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
@@ -215,7 +215,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Assistive Technology</h5>
+          <h4 class="modal-title">Assistive Technology</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
@@ -231,7 +231,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Community Participation</h5>
+          <h4 class="modal-title">Community Participation</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
@@ -247,7 +247,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">NDIS Plan Management</h5>
+          <h4 class="modal-title">NDIS Plan Management</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
@@ -263,7 +263,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Personal Care Assistance</h5>
+          <h4 class="modal-title">Personal Care Assistance</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
@@ -459,7 +459,7 @@
   </section>
 
   <!-- Contact Us Section -->
-  <section id="contact" class="py-5 bg-light">
+  <!-- <section id="contact" class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center mb-4">Contact Us</h2>
       <form id="contactForm" class="mx-auto" style="max-width: 600px;">
@@ -480,25 +480,37 @@
         </div>
       </form>
     </div>
-  </section>
+  </section> -->
 
   <!-- Footer -->
   <footer class="bg-dark text-white py-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 mb-4 mb-lg-0">
-          <h5 class="text-uppercase mb-4">Safe Path</h5>
+          <h3 class="text-uppercase mb-4">Safe Path</h3>
           <p>Providing compassionate and professional disability support services to enhance independence and quality of
             life.</p>
           <div class="social-icons">
-            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-white me-3" aria-label="Visit us on Facebook">
+              <i class="fab fa-facebook-f"></i>
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a href="#" class="text-white me-3" aria-label="Follow us on Twitter">
+              <i class="fab fa-twitter"></i>
+              <span class="sr-only">Twitter</span>
+            </a>
+            <a href="#" class="text-white me-3" aria-label="Follow us on Instagram">
+              <i class="fab fa-instagram"></i>
+              <span class="sr-only">Instagram</span>
+            </a>
+            <a href="#" class="text-white" aria-label="Connect with us on LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+              <span class="sr-only">LinkedIn</span>
+            </a>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">Quick Links</h5>
+          <h4 class="text-uppercase mb-4">Quick Links</h4>
           <ul class="list-unstyled">
             <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Home</a></li>
             <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About Us</a></li>
@@ -508,7 +520,7 @@
           </ul>
         </div>
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">Our Services</h5>
+          <h4 class="text-uppercase mb-4">Our Services</h4>
           <ul class="list-unstyled">
             <li class="mb-2"><a href="#services" class="text-white text-decoration-none">In-Home Support</a></li>
             <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Community Participation</a>
@@ -520,7 +532,7 @@
           </ul>
         </div>
         <div class="col-lg-3 col-md-6">
-          <h5 class="text-uppercase mb-4">Newsletter</h5>
+          <h4 class="text-uppercase mb-4">Newsletter</h4>
           <p>Subscribe to our newsletter to receive updates and news.</p>
           <form>
             <div class="input-group mb-3">
@@ -543,7 +555,7 @@
 
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.js"></script>
   <script src="script.js"></script>
   <script type="application/ld+json">
     {

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://safepathdisabilityservices.com.au/sitemap.xml
